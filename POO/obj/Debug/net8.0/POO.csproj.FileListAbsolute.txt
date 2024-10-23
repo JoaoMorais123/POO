@@ -12,3 +12,4 @@
 /Users/joaomarcelo/Desktop/uni2324/2ano/PO/Aula1909/POO/POO/bin/Debug/net8.0/POO
 /Users/joaomarcelo/Desktop/uni2324/2ano/PO/Aula1909/POO/POO/bin/Debug/net8.0/POO.runtimeconfig.json
 /Users/joaomarcelo/Desktop/uni2324/2ano/PO/Aula1909/POO/POO/obj/Debug/net8.0/POO.genruntimeconfig.cache
+/Users/joaomarcelo/Desktop/uni2324/2ano/PO/Aula1909/POO/POO/obj/Debug/net8.0/POO.sourcelink.json

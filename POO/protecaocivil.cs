@@ -11,8 +11,27 @@ namespace POO
 {
     public class ProtecaoCivil : Equipa
     {
-        public string AreaResponsabilidade { get; set; }
+        #region Private Properties
+        private string areaResponsabilidade;
+        #endregion
 
+        #region Public Properties
+        public string AreaResponsabilidade
+        {
+            get { return areaResponsabilidade; }
+            set { areaResponsabilidade = value; }
+        }
+        #endregion
+
+        #region Constructors
+        public ProtecaoCivil(string nomeEquipa, string areaResponsabilidade)
+            : base(nomeEquipa)
+        {
+            this.areaResponsabilidade = areaResponsabilidade;
+        }
+        #endregion
+
+        #region Override Method
         public override void ExibirDetalhesEquipa()
         {
             Console.WriteLine($"Nome da Equipa: {NomeEquipa}, Área de Responsabilidade: {AreaResponsabilidade}");
@@ -21,5 +40,6 @@ namespace POO
                 membro.ExibirDetalhes();
             }
         }
+        #endregion
     }
 }

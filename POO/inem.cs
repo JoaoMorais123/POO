@@ -11,9 +11,27 @@ namespace POO
 {
     public class Inem : Equipa
     {
-        public string ZonaAtuacao { get; set; }
-        public object Exibir { get; set; }
+        #region Private Properties
+        private string zonaAtuacao;
+        #endregion
 
+        #region Public Properties
+        public string ZonaAtuacao
+        {
+            get { return zonaAtuacao; }
+            set { zonaAtuacao = value; }
+        }
+        #endregion
+
+        #region Constructors
+        public Inem(string nomeEquipa, string zonaAtuacao)
+            : base(nomeEquipa)
+        {
+            this.zonaAtuacao = zonaAtuacao;
+        }
+        #endregion
+
+        #region Override Method
         public override void ExibirDetalhesEquipa()
         {
             Console.WriteLine($"Nome da Equipa: {NomeEquipa}, Zona de Atuação: {ZonaAtuacao}");
@@ -22,5 +40,6 @@ namespace POO
                 membro.ExibirDetalhes();
             }
         }
+        #endregion
     }
 }

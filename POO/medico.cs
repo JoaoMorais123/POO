@@ -11,12 +11,39 @@ namespace POO
 {
     public class Medico : Funcionario
     {
-        public string Especializacao { get; set; }
-        public int IDHospital { get; set; }
+        #region Private Properties
+        private string especializacao;
+        private int idHospital;
+        #endregion
 
-        public override void ExibirDetalhes() 
+        #region Public Properties
+        public string Especializacao
+        {
+            get { return especializacao; }
+            set { especializacao = value; }
+        }
+
+        public int IDHospital
+        {
+            get { return idHospital; }
+            set { idHospital = value; }
+        }
+        #endregion
+
+        #region Constructors
+        public Medico(string nome, int numeroFuncionario, string cargo, string especializacao, int idHospital)
+            : base(nome, numeroFuncionario, cargo)
+        {
+            this.especializacao = especializacao;
+            this.idHospital = idHospital;
+        }
+        #endregion
+
+        #region Override Method
+        public override void ExibirDetalhes()
         {
             Console.WriteLine($"Nome: {Nome}, Nº Funcionario: {NumeroFuncionario}, Cargo: {Cargo}, Especialização: {Especializacao}, ID Hospital: {IDHospital}");
         }
+        #endregion
     }
 }

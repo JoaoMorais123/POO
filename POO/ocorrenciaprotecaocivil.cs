@@ -11,14 +11,31 @@ namespace POO
 {
     public class OcorrenciaProtecaoCivil : Ocorrencia
     {
-        public string TipoOcorrencia { get; set; }
-        public string Local { get; set; }
-        
-        public string Responsavel { get; set; }
+        #region Private Properties
+        private string tipoOcorrencia;
+        #endregion
 
+        #region Public Properties
+        public string TipoOcorrencia
+        {
+            get { return tipoOcorrencia; }
+            set { tipoOcorrencia = value; }
+        }
+        #endregion
+
+        #region Constructors
+        public OcorrenciaProtecaoCivil(DateTime dataOcorrencia, string localizacao, string descricao, string tipoAtendimento, string tipoOcorrencia)
+            : base(dataOcorrencia, localizacao, descricao, tipoAtendimento)
+        {
+            this.tipoOcorrencia = tipoOcorrencia;
+        }
+        #endregion
+
+        #region Override Method
         public override void ExibirDetalhesOcorrencia()
         {
-            Console.WriteLine($"Data: {DataOcorrencia}, Localização: {Localizacao}, Descrição: {Descricao}, Tipo de Ocorrência: {TipoOcorrencia}");
+            Console.WriteLine($"Data: {DataOcorrencia}, Localização: {Localizacao}, Descrição: {Descricao}, Tipo de Atendimento: {TipoAtendimento}, Tipo de Ocorrência: {TipoOcorrencia}");
         }
+        #endregion
     }
 }

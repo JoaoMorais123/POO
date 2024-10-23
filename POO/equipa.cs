@@ -11,16 +11,40 @@ namespace POO
 {
     public abstract class Equipa
     {
-        public string NomeEquipa { get; set; } = "Nome padrão";
-        public List<Funcionario> Membros { get; set; } = new List<Funcionario>();
+        #region Private Properties
+        private string nomeEquipa;
+        private List<Funcionario> membros = new List<Funcionario>();
+        #endregion
 
-        // Método abstrato para exibir detalhes da equipa
-        public abstract void ExibirDetalhesEquipa();
+        #region Public Properties
+        public string NomeEquipa
+        {
+            get { return nomeEquipa; }
+            set { nomeEquipa = value; }
+        }
 
+        public List<Funcionario> Membros
+        {
+            get { return membros; }
+            set { membros = value; }
+        }
+        #endregion
+
+        #region Constructors
+        public Equipa(string nomeEquipa)
+        {
+            this.nomeEquipa = nomeEquipa;
+        }
+        #endregion
+
+        #region Methods
         public void AdicionarMembro(Funcionario funcionario)
         {
-            Membros.Add(funcionario);
+            membros.Add(funcionario);
         }
+
+        public abstract void ExibirDetalhesEquipa();
+        #endregion
     }
 }
 
