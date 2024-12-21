@@ -1,0 +1,13 @@
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\AuthLib.dll
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\AuthLib.pdb
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\obj\Debug\AuthLib.csproj.AssemblyReference.cache
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\obj\Debug\AuthLib.csproj.CoreCompileInputs.cache
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\obj\Debug\AuthLib.csproj.Up2Date
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\obj\Debug\AuthLib.dll
+C:\Users\marce\Desktop\POO\AuthLib\AuthLib\obj\Debug\AuthLib.pdb

@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfFrontEnd.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main Window" Height="800" Width="1000">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <TextBlock Text="Bem-vindo ao sistema!" FontSize="18" Margin="0,10,0,20" HorizontalAlignment="Center" />
+
+            <!-- Secção para OrderLines -->
+            <GroupBox Header="Order Lines" Margin="10">
+                <StackPanel>
+                    <Button x:Name="btnGetOrderLines" Content="Listar Order Lines" Click="btnGetOrderLines_Click" />
+                    <Button x:Name="btnInsertOrderLine" Content="Adicionar Order Line" Click="btnInsertOrderLine_Click" />
+                    <ListView x:Name="lvOrderLines" Height="150" DisplayMemberPath="TotalPrice" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Secção para Invoices -->
+            <GroupBox Header="Invoices" Margin="10">
+                <StackPanel>
+                    <Button x:Name="btnGetInvoices" Content="Listar Invoices" Click="btnGetInvoices_Click" />
+                    <Button x:Name="btnInsertInvoice" Content="Adicionar Invoice" Click="btnInsertInvoice_Click" />
+                    <ListView x:Name="lvInvoices" Height="150" DisplayMemberPath="InvoiceNumber" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Secção para Car Accessories -->
+            <GroupBox Header="Car Accessories" Margin="10">
+                <StackPanel>
+                    <Button x:Name="btnGetCarAccessories" Content="List Car Accessories" Click="btnGetCarAccessories_Click" />
+                    <Button x:Name="btnInsertCarAccessory" Content="Insert Car Accessory" Click="btnInsertCarAccessory_Click" />
+                    <Button x:Name="btnUpdateCarAccessory" Content="Update Car Accessory" Click="btnUpdateCarAccessory_Click"/>
+                    <ListView x:Name="lvCarAccessories" Height="150" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Secção para Carriers -->
+            <GroupBox Header="Carriers" Margin="10">
+                <StackPanel>
+                    <Button x:Name="btnGetCarriers" Content="Listar Carriers" Click="btnGetCarriers_Click" />
+                    <Button x:Name="btnInsertCarrier" Content="Adicionar Carrier" Click="btnInsertCarrier_Click" />
+                    <ListView x:Name="lvCarriers" Height="150" DisplayMemberPath="Name" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Botão para logout -->
+            <Button Content="Logout" Click="btnLogout_Click" HorizontalAlignment="Right" Margin="10" />
+        </StackPanel>
+    </ScrollViewer>
+</Window>

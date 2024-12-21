@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8"/>
+        <PackageReference Include="Npgsql" Version="9.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Properties\Model\**" />
+      <Compile Remove="Login.cs" />
+      <Compile Remove="Models\Request\Register.cs" />
+      <Compile Remove="Models\Request\ProductInsert.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Properties\Model\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Properties\Model\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Properties\Model\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="AuthLib">
+        <HintPath>..\..\..\..\AuthLib\AuthLib\bin\Debug\AuthLib.dll</HintPath>
+      </Reference>
+      <Reference Include="OrderLib">
+        <HintPath>..\..\..\..\OrderLib\OrderLib\bin\Debug\OrderLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

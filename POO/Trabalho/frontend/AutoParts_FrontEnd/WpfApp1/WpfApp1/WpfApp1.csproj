@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="AuthLib">
+        <HintPath>..\..\..\..\..\AuthLib\AuthLib\bin\Debug\AuthLib.dll</HintPath>
+      </Reference>
+      <Reference Include="OrderLib">
+        <HintPath>..\..\..\..\..\OrderLib\OrderLib\bin\Debug\OrderLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

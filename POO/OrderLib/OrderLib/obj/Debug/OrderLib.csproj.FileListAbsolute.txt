@@ -1,0 +1,6 @@
+C:\Users\marce\Desktop\POO\OrderLib\OrderLib\bin\Debug\OrderLib.dll
+C:\Users\marce\Desktop\POO\OrderLib\OrderLib\bin\Debug\OrderLib.pdb
+C:\Users\marce\Desktop\POO\OrderLib\OrderLib\obj\Debug\OrderLib.csproj.AssemblyReference.cache
+C:\Users\marce\Desktop\POO\OrderLib\OrderLib\obj\Debug\OrderLib.csproj.CoreCompileInputs.cache
+C:\Users\marce\Desktop\POO\OrderLib\OrderLib\obj\Debug\OrderLib.dll
+C:\Users\marce\Desktop\POO\OrderLib\OrderLib\obj\Debug\OrderLib.pdb
